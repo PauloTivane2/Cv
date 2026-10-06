@@ -4,7 +4,7 @@ Template de CV profissional em formato A4 (2 páginas) com **TypeScript**, **Tai
 
 ---
 
-## 📁 Estrutura do Projecto
+## Estrutura do Projecto
 
 ```text
 cv-template/
@@ -52,7 +52,7 @@ cv-template/
 
 ---
 
-## 🚀 Como Usar
+##  Como Usar
 
 ### 1. Actualizar os Seus Dados
 Para actualizar o currículo, edite apenas o ficheiro de dados:
