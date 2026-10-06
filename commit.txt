@@ -1,0 +1,14 @@
+refactor(arquitetura): modularizacao do projeto e pipeline multi-formato (HTML, PDF, DOCX)
+
+- Reorganizacao da estrutura do projeto sob a diretoria src/ para garantir escalabilidade e facil manutencao.
+- Centralizacao dos contratos de tipagem TypeScript em src/types/cv.ts.
+- Isolamento dos dados curriculares em src/data/paulo-tivane.pt.ts, desacoplando o conteudo das camadas de apresentacao.
+- Modularizacao dos componentes e seccoes visuais em src/templates/html/, mantendo paridade absoluta com as dimensoes A4 e estilos Tailwind originais.
+- Adocao global da tipografia Chivo tanto para titulos como para o corpo de texto.
+- Implementacao de hiperligacoes interativas no cabecalho (LinkedIn e Portfolio).
+- Aplicacao de alinhamento justificado na seccao de competencias comportamentais.
+- Criacao de gerador nativo Microsoft Word (.docx) estruturado em src/templates/docx/render.ts.
+- Implementacao de gerador automatizado de PDF em A4 com margens nulas e impressao de fundos ativa em src/scripts/build-pdf.ts.
+- Criacao de orquestrador central de compilacao em src/scripts/build.ts e atualizacao dos comandos no package.json.
+- Atualizacao das diretrizes de redacao e regras do projeto em doc/skill.md personalizadas para Paulo Tivane em Portugues Europeu.
+- Configuracao do .gitignore para isolar artefactos gerados na diretoria dist/.
